@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kernels_can_icl"
+version = "0.1.0"
+description = "Kernels can do ICL"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kernels_can_icl*"]
+exclude = ["notebooks*", "experiments*", "__pycache__*"]
